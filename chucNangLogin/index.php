@@ -28,9 +28,9 @@
     </div>
 </form>
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST"){
-    $user_name = $_POST["user_name"];
-    $password = $_POST["password"];
+    if ($_SERVER["REQUEST_METHOD"] == "POST"){
+        $user_name = $_POST["user_name"];
+        $password = $_POST["password"];
 
     if ($user_name === "admin" && $password === "admin"){
         echo "<h2>Welcome <span style='color: red'>" .$user_name. "</span> to website!</h2>";
