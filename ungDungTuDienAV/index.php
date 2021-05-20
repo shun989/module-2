@@ -45,10 +45,10 @@
                     "banana"=>"quả chuối",
                     "apple"=>"quả táo", );
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $searchword = $_POST["search"];
+        $searchWord = $_POST["search"];
         $flag = 0;
         foreach ($dictionary as $word => $description) {
-            if($word == $searchword){
+            if($word == $searchWord){
                 echo "Từ: ". $word . ".<br/>Nghĩa của từ: ".$description;
                 echo "<br/>";
                 $flag = 1;
